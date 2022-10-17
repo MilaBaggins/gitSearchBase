@@ -1,1 +1,109 @@
-/* Desenvolva sua estilização aqui...*/
+
+main{
+    display: flex;
+}
+
+.pink-section{
+    height: 100vh;
+    width: 50vw;
+    background-color: var(--color-brand-1);
+    color: var(--color-white);
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+    line-height: 32px;
+}
+
+h1{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+p{
+    font-size: var(--font-2);
+    font-weight: lighter;
+}
+
+.pink-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 60%;
+    min-height: 35%;
+}
+
+#profiles-div{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 15px;
+}
+
+
+.black-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 50vw;
+    background-color: var(--color-grey-2);
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+}
+
+.div-black{
+    display: flex;
+    height: 200px;
+    width: 300px;
+    flex-direction: column;
+}
+
+.p-find-user{
+    margin-bottom: 40px;
+    color: var(--color-white);
+}
+
+#div-label-input{
+    display: flex;
+    flex-direction: column;
+    color: var(--color-white);
+    height: 120px;
+    width: 270px;
+    justify-content: space-around;
+}
+
+.label-user{
+    font-size: small;
+}
+
+#userInput{
+    outline: none;
+    border: none;
+    border-style: none;
+    background-color: var(--color-grey-1);
+    border-radius: 8px;
+    padding: 8px 12px 8px 12px;
+    color: var(--color-white);
+}
+
+#buttonSearchUser{
+    background-color: var(--color-brand-2);
+    color: var(--color-white);
+    border:none;
+    border-radius: 6px;
+    padding: 8px 12px 8px 12px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+img{
+    width: 50px;
+    border-radius: 100px;
+}
+
+.profile-section>img {
+    width: 52px;
+    height: 52px;
+}
+

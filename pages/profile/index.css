@@ -1,1 +1,115 @@
-/* Desenvolva sua estilização aqui...*/
+body{
+    background-color: var(--color-grey-3);
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.profile-section {
+    display: flex;
+    justify-content: space-between;
+    min-height: 80px;
+    width:100%;
+    gap: 12px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+#box-profile{
+    display: flex;
+    gap: 15px;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 57px;
+    color: var(--color-white);
+}
+
+.user-ocupation{
+    font-size: 14px
+}
+
+#buttons-nav{
+    display: flex;
+    align-items: flex-start;
+    justify-content: end;
+    width: 50%;
+    gap: 15px;
+    height: 40px;
+}
+
+#button-nav-email{
+    background-color: var(--color-brand-2);
+    color: var(--color-white);
+    border:none;
+    border-radius: 6px;
+    padding: 8px 12px 8px 12px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+#button-repository{
+    background-color: var(--color-brand-2);
+    color: var(--color-white);
+    border:none;
+    border-radius: 6px;
+    padding: 8px 12px 8px 12px;
+    cursor: pointer;
+    font-size: 13px;
+}    
+
+#button-nav-change-user{
+    background-color: var(--color-grey-4);
+    color: var(--color-white);
+    border:none;
+    border-radius: 6px;
+    padding: 8px 12px 8px 12px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+h3{
+    word-break: break-all;
+}
+
+#demo-button{
+    margin-left: 10px;
+    border: solid 0.6px var(--color-white);
+    color: var(--color-white);
+    background: none;
+    padding: 6px 12px 6px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    min-height: 500px;
+    
+}
+.cards-repository{
+    color: var(--color-white);
+    border-radius: 8px;
+    margin: 10px;
+    background-color: var(--color-grey-2);
+    padding: 25px;
+    max-width: 320px;
+    min-height: 100px;
+}
+
+.repository-p{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: small;
+    line-height: 25px;
+}
