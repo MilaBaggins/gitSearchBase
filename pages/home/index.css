@@ -68,9 +68,13 @@ p{
     display: flex;
     flex-direction: column;
     color: var(--color-white);
-    height: 120px;
+    min-height: 130px;
     width: 270px;
     justify-content: space-around;
+}
+
+.user-not-found-small{
+    color:var(--color-brand-2)
 }
 
 .label-user{
@@ -105,5 +109,19 @@ img{
 .profile-section>img {
     width: 52px;
     height: 52px;
+}
+
+.loading{
+    width: 12px;
+    animation: spinner 1s infinite linear;
+}
+
+@keyframes spinner {
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
 }
 

@@ -24,6 +24,10 @@ body{
     gap: 15px;
 }
 
+#box-profile img{
+    width: 70px;
+}
+
 .profile-info {
     display: flex;
     flex-direction: column;

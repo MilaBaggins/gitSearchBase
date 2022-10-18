@@ -40,24 +40,24 @@ function renderRecentProfiles() {
     boxProfile.innerHTML = '' 
 
     const imgRecentProfilePic = document.createElement('img')
-    imgRecentProfilePic.src = (parseItem.avatar_url)
+    imgRecentProfilePic.src = (parseItem[0].avatar_url)
 
     const profileInfo = document.createElement('div')
     profileInfo.classList.add('profile-info')
 
     const h3UserName = document.createElement('h3')
     h3UserName.classList.add('user-name')
-    h3UserName.innerText = (parseItem.name)
+    h3UserName.innerText = (parseItem[0].name)
 
     const pUserOcupation = document.createElement('p')
     pUserOcupation.classList.add('user-ocupation')
-    pUserOcupation.innerText = (parseItem.bio)
+    pUserOcupation.innerText = (parseItem[0].bio)
 
     profileInfo.append(h3UserName, pUserOcupation)
     boxProfile.append(imgRecentProfilePic, profileInfo)
 
-    getRepos(parseItem.repos_url)
-    createMailTo(parseItem.email)
+    getRepos(parseItem[0].repos_url)
+    createMailTo(parseItem[0].email)
 
     return boxProfile
     
